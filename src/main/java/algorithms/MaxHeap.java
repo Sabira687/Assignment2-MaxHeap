@@ -106,7 +106,6 @@ public class MaxHeap {
         }
     }
 
-
     private void swap(int i, int j) {
         tracker.incSwaps();
         tracker.incArrayAccesses(4);

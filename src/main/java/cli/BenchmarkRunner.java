@@ -18,7 +18,7 @@ public class BenchmarkRunner {
             writer.write("n,time_ns,comparisons,swaps,array_accesses,allocations\n");
 
             for (int n : sizes) {
-                System.out.println("▶ Running benchmark for n = " + n);
+                System.out.println("Running benchmark for n = " + n);
 
                 int[] arr = generateRandomArray(n);
                 PerformanceTracker tracker = new PerformanceTracker();
@@ -42,7 +42,7 @@ public class BenchmarkRunner {
                 System.out.printf("n=%d done (time: %d ns)%n", n, time);
             }
 
-            System.out.println("\n✅ Results saved to " + outputFile);
+            System.out.println("\nResults saved to " + outputFile);
 
         } catch (IOException e) {
             System.err.println("Error writing to file: " + e.getMessage());
